@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.solTaraf, .sagTaraf {
+    width: 50%;
+    padding: 20px;
+}
+
+#loading {
+    display: none;
+}
