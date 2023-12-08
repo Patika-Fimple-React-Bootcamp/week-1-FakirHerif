@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             data.forEach(todo => {
                 const listItem = document.createElement("li");
-                listItem.textContent = `${todo.title} - ${todo.completed ? 'Completed' : 'Not Completed'}`;
+                listItem.textContent = `${todo.title} - ${todo.completed ? 'Completed ✔️' : 'Not Completed ❌'}`;
 
                 const deleteButton = document.createElement("button");
                 deleteButton.textContent = "Delete";
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const checkbox = document.getElementById("checkbox").checked;
 
         const listItem = document.createElement("li");
-        listItem.textContent = `${text} - ${checkbox ? 'Completed' : 'Not Completed'}`;
+        listItem.textContent = `${text} - ${checkbox ? 'Completed ✔️' : 'Not Completed ❌'}`;
 
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
